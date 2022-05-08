@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { signUpUser, getUser } from '../../../_actions/user_action';
 import {
   Modal,
   Box,
