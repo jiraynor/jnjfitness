@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { signUpUser, getUser } from '../../../_actions/user_action';
 import {
   Modal,
   Box,
   Typography,
-  InputLabel,
-  Select,
-  MenuItem,
   TextField,
   Button,
-  RadioGroup,
-  FormControlLabel,
-  Radio,
-  FormControl,
-  Alert,
-  FormLabel,
   Divider,
 } from '@mui/material';
 

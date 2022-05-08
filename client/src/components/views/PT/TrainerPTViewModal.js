@@ -442,7 +442,7 @@ function TrainerPTViewModal({ open, handleClose, ptInfo, ptReload, reload }) {
 
   return (
     <Modal open={open} onClose={handleClose}>
-      <Box noValidate sx={[style, { mt: 1 }]}>
+      <Box noValidate sx={[style, { mt: 1, overflow: 'auto' }]}>
         <Typography sx={{ fontWeight: 'bolder' }} variant="h6" component="h2">
           PT 관리
         </Typography>
