@@ -1,4 +1,15 @@
-function TablePaginationActions(props) {
+import PropTypes from 'prop-types';
+import { useTheme } from '@mui/material/styles';
+import { Box, IconButton } from '@mui/material';
+
+import {
+  FirstPage,
+  LastPage,
+  KeyboardArrowLeft,
+  KeyboardArrowRight,
+} from '@mui/icons-material';
+
+export function TablePaginationActions(props) {
   const theme = useTheme();
   const { count, page, rowsPerPage, onPageChange } = props;
 

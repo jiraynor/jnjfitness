@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import cookies from 'react-cookies';
 import axios from 'axios';
-import PropTypes from 'prop-types';
 
 import {
   Grid,
@@ -20,19 +19,11 @@ import {
   Button,
   FormControl,
   TableHead,
-  IconButton,
   TableFooter,
   TablePagination,
 } from '@mui/material';
 
-import { useTheme } from '@mui/material/styles';
-
-import {
-  FirstPage,
-  LastPage,
-  KeyboardArrowLeft,
-  KeyboardArrowRight,
-} from '@mui/icons-material';
+import { TablePaginationActions } from '../etc/TablePaginationActions';
 
 import NoticeWriteModal from './NoticeWriteModal';
 import NoticeViewModal from './NoticeViewModal';
