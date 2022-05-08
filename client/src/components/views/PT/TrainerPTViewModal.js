@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import { signUpUser, getUser } from '../../../_actions/user_action';
 import {
   Modal,
   Box,
   Typography,
-  InputLabel,
-  Select,
-  MenuItem,
   TextField,
   Button,
-  RadioGroup,
   FormControlLabel,
-  Radio,
-  FormControl,
-  Alert,
-  FormLabel,
   FormGroup,
   Checkbox,
   IconButton,
@@ -23,19 +14,7 @@ import {
 } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 800,
-  maxHeight: 1000,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-  overflow: 'auto',
-};
+import { style } from '../etc/modal.style';
 
 function TrainerPTViewModal({ open, handleClose, ptInfo, ptReload, reload }) {
   const [cnt, setCnt] = useState('');
